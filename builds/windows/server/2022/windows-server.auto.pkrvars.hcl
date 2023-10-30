@@ -62,3 +62,19 @@ scripts = ["scripts/windows/windows-prepare.ps1"]
 inline = [
   "Get-EventLog -LogName * | ForEach { Clear-EventLog -LogName $_.Log }"
 ]
+
+vsphere_insecure_connection = true
+common_vm_version = "20"
+common_tools_upgrade_policy = true
+common_remove_cdrom = true
+common_template_conversion = false
+common_content_library_ovf = true
+common_content_library_destroy = true
+common_content_library_skip_export = false
+common_ovf_export_enabled = false
+common_ovf_export_overwrite = true
+common_data_source = "http"
+common_http_port_min = 8000
+common_http_port_max = 8099
+common_ip_wait_timeout = "20m"
+common_shutdown_timeout = "15m"
